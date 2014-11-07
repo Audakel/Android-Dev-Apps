@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.audakel.templematch" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/boise"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Practice"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".Game"
+            android:label="@string/title_activity_game"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".LandingPage"
+            android:label="Temple Match"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            >
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_signup"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            >
+        </activity>
+        <activity
+            android:name=".FullScreenImage"
+            android:label="@string/title_activity_full_screen" >
+        </activity>
+        <activity
+            android:name=".practiceTempleVView"
+            android:label="@string/title_activity_practice_temple_vview" >
+        </activity>
+        <activity
+            android:name=".practiceTempleImageView"
+            android:label="@string/title_activity_practice_temple_image_view" >
+        </activity>
+    </application>
+
+</manifest>

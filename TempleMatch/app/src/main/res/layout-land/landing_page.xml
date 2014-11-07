@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.audakel.templematch.Tester">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/fullImage"
+        android:contentDescription="TemplePicture"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/cordoba"
+        android:cropToPadding="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/GameTitle"
+        android:id="@+id/textMatchVeiw"
+        android:layout_alignTop="@+id/fullImage"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:textColor="#ff393939"
+        android:typeface="serif"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/StartScreenButton"
+        android:id="@+id/startScreenButton"
+        android:background="#d5fafefe"
+        android:textColor="#ff4a4a4a"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="18dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/landingSignUpButton"
+        android:layout_alignStart="@+id/landingSignUpButton"
+        android:layout_alignRight="@+id/landingLoginButton"
+        android:layout_alignEnd="@+id/landingLoginButton"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signUp"
+        android:id="@+id/landingSignUpButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textMatchVeiw"
+        android:background="#d5fafefe"
+
+        android:textColor="#ff4a4a4a"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/textMatchVeiw"
+        android:padding="10dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/landingLoginButton"
+        android:layout_alignTop="@+id/landingSignUpButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textMatchVeiw"
+        android:background="#d5fafefe"
+
+        android:textColor="#ff4a4a4a"
+
+        android:layout_marginRight="20dp"
+        android:layout_alignBottom="@+id/landingSignUpButton"
+        android:layout_toRightOf="@+id/textMatchVeiw"
+        android:padding="10dp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

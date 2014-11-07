@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.audakel.templematch.Game">
+
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <GridView
+                    android:id="@+id/gameGridView"
+                    android:layout_width="391dp"
+                    android:scrollbars="none"
+                    android:layout_height="fill_parent" android:visibility="visible"
+                    android:columnWidth="90dp"
+
+                    android:verticalSpacing="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:stretchMode="columnWidth"
+                    android:layout_alignRight="@+id/linearLayout2"
+
+
+                    android:numColumns="1"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="203dp"
+        android:layout_height="fill_parent" android:visibility="visible"
+        android:divider="@null"
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:listSelector="@color/yellow">
+    </ListView>
+
+    <Button
+        android:id="@+id/practiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Practice Match"
+        android:textSize="12dp"
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:singleLine="false"
+        android:clickable="true"
+        android:background="#d4585554"
+        android:padding="10dp"
+        android:layout_alignParentEnd="false"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#a0ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Right: 0  Wrong: 0"
+        android:id="@+id/scoreView"
+        android:layout_marginLeft="20dp"
+        android:background="#d4585554"
+        android:textColor="#a0ffffff"
+        android:textSize="12dp"
+        android:padding="10dp"
+        android:layout_alignBottom="@+id/practiceButton"
+        android:layout_alignTop="@+id/practiceButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:id="@+id/resetButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/practiceButton"
+        android:background="#d4585554"
+        android:layout_alignBottom="@+id/practiceButton"
+        android:textColor="#a0ffffff"
+        android:padding="10dp"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textMatchVeiw"
+        android:layout_above="@+id/scoreView"
+        android:layout_marginLeft="20dp"
+        android:textSize="14dp"
+        android:text="Match Status"
+        android:textColor="#ffe0e0e0"
+        android:shadowColor="@color/black"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="2"/>
+
+</RelativeLayout>
